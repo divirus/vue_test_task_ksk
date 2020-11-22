@@ -1,0 +1,46 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/bootstrap-vue/src/index.scss';
+@import 'colors.scss';
+
+.tabs-container {
+  max-width: 1200px;
+}
+
+.tab-content {
+  background: $tab_content_background !important;
+}
+
+.nav-item {
+  flex-grow: 0 !important;
+
+  &:nth-child(2) {
+    .nav-link {
+      margin-left: -46px !important;
+    }
+  }
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 210px;
+  line-height: 80px;
+  color: $tab_inactive_font;
+  background: transparent !important;
+  border-top: none !important;
+  border-bottom: 70px solid $tab_inactive_background !important;
+  border-left: 0px solid transparent !important;
+  border-right: 46px solid transparent !important;
+  z-index: 1;
+
+  &:hover {
+    color: $tab_hover_font;
+  }
+
+  &.active {
+    color: $tab_active_font !important;
+    border-bottom-color: $tab_active_background !important;
+    z-index: 2;
+  }
+}

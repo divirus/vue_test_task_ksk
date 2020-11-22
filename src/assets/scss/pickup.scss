@@ -1,0 +1,47 @@
+@import './colors.scss';
+
+.map {
+    margin: 10px 0;
+}
+
+.pickup-container {
+    padding: 0 20px;
+}
+
+.input-radio_wrapper {
+    position: relative;
+    display: flex;
+}
+
+.input-radio_wrapper {
+    margin: 6px 0;
+    margin-right: 40px;
+    align-self: center;
+
+    p { margin-bottom: 0 !important; }
+}
+
+.radio-button-group_wrapper {
+    display: block;
+    position: relative;
+
+    &.inline {
+      display: flex !important;
+    }
+}
+
+.input-radio {
+    height: 18px;
+    width: 18px;
+    margin-right: 6px;
+
+    &:hover {
+        border-color: $radio_hover;
+    }
+}
+
+.button_send {
+    &.pickup {
+        margin: 20px 0; 
+    }
+}

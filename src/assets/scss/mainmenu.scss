@@ -1,0 +1,21 @@
+@import '../../assets//scss/resolutions.scss';
+
+.main-menu_title {
+  font-size: 30px;
+  margin: 20px 20%;
+  text-align: left;
+
+  @media screen and (max-width: $regular_resolution) {
+    margin: 20px 6%;
+  }
+}
+
+.main-menu_tabs-wrapper {
+  margin: 2% 20%;
+}
+
+.main-menu_spoilers-wrapper {
+  @media screen and (max-width: $regular_resolution) {
+    margin: 0 4%;
+  }
+}

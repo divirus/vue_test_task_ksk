@@ -1,0 +1,93 @@
+@import '../../assets/scss/colors.scss';
+
+.input-text {
+    border-radius: 4px;
+    border: $input_field_border;
+    height: 56px;
+    width: 100%;
+    position: relative;
+    padding-left: 14px;
+
+    &::-webkit-input-placeholder {
+        color: $input_field_placeholder;
+    }
+    &::-moz-placeholder {
+        color: $input_field_placeholder;
+    }
+    &:-ms-input-placeholder {
+        color: $input_field_placeholder;
+    }
+    &:-moz-placeholder {
+        color: $input_field_placeholder;
+    }
+}
+
+.text-area_commentary {
+    border-radius: 4px;
+    border: $input_field_border;
+    height: 100px;
+    width: 100%;
+    resize: none !important;
+    padding: 2px 10px;
+
+}
+
+.button_send {
+    float: right;
+    margin: 20px 26px;
+    position: relative;
+    display: flex;
+    border-radius: 30px;
+    border: none;
+    height: 50px;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    background: $button_normal;
+    color: $button_font;
+
+    &:hover {
+        background: $button_hover;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: none!important; 
+    }
+
+    &:active {
+        background: $button_pressed;
+        border: none;
+    }
+}
+
+.delivery-container {
+    width: 100%;
+    height: 440px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 26px;
+    margin-bottom: 12px;
+}
+
+.first-line {
+    display: inline-block;
+    width: 46% !important;
+    margin: 0 16px;
+    margin-bottom: 12px;
+
+    p { float: left; }
+}
+
+.error {
+    border-color: $input_field_invalid;
+}
+
+p {
+    font-weight: 600;
+}

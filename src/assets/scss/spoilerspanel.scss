@@ -1,0 +1,43 @@
+@import '../../assets/scss/colors.scss';
+
+  .mb-1 {
+    margin-bottom: 0 !important;
+  }
+  
+  .p-1 {
+    padding: 0 !important;  
+  }
+
+  .card-header, 
+  .btn-info {
+     height: 50px !important;
+  }
+
+  .btn-info {
+    background-color: $accordion_background !important;
+    border-color: $accordion_border !important;
+    box-shadow: none !important;
+    text-align: left;
+    font-weight: 600;
+
+    &.collapsed {
+      color: $accordion_closed_font_color;
+    }
+    &.not-collapsed {
+      color: $accordion_opened_font_color;
+    }
+  }
+
+  .arrow {
+    background: url('../../icons/arrow.png') center no-repeat;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    float: right;
+    top: -36px;
+    left: -12px;
+
+    .not-collapsed ~ & {
+      transform: rotate(180deg);
+    }
+  }
